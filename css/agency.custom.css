@@ -739,12 +739,36 @@ body {
   webkit-tap-highlight-color: #5abaf8;
 }
 .horiz-separate{
-	margin-bottom:30px;
-	margin-top:30px;
+	margin-bottom:150px;
+	margin-top:20px;
 }
+
 .left-paragraph {
    margin-bottom:30px;
 	margin-top:30px;
 	margin-left:100px;
 	margin-right:10px;
+}
+
+@media (max-width: 768px){
+  .left-paragraph {
+    margin-bottom:0px;
+	 margin-top:30px;
+	 margin-left:5px;
+	 margin-right:0px;
+    font-size: 12px;
+  }
+  h4{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px){
+  .left-paragraph {
+    margin-bottom:0px;
+	 margin-top:30px;
+	 margin-left:5px;
+	 margin-right:0px;
+    font-size: 10px;
+  }
 }
