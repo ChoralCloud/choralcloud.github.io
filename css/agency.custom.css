@@ -778,3 +778,11 @@ body {
 .col-separate{
   padding-bottom: 50px;
 }
+
+.img-icon{
+  display: inline;
+  width: 40px;
+  height: auto;
+  padding-top: 5px;
+  float: left;
+}
