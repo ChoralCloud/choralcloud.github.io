@@ -794,3 +794,64 @@ body {
   padding: 5px;
   float: left;
 }
+
+/* ---- particles.js container ---- */
+canvas {
+  display:block;
+  vertical-align:bottom;
+}
+
+#particles-js {
+  background-color: #4286f4;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:-1;
+}
+
+header2 {
+  text-align: center;
+  color: white;
+}
+header2 .intro-text {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+header2 .intro-text .intro-lead-in {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 50px;
+}
+header2 .intro-text .intro-heading {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  header2 .intro-text {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  header2 .intro-text .intro-lead-in {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+  header2 .intro-text .intro-heading {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 75px;
+    margin-bottom: 25px;
+  }
+}
