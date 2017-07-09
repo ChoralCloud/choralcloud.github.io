@@ -786,3 +786,11 @@ body {
   padding-top: 5px;
   float: left;
 }
+
+.img-icon-v2{
+  display: inline;
+  height: 50px;
+  width: auto;
+  padding: 5px;
+  float: left;
+}
