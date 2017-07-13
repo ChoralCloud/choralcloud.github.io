@@ -110,7 +110,7 @@
             </div>
             <div class="row horiz-separate">
                 <div class="col-xs-6">
-                    <p class="left-paragraph"> Choral allows the user to combine and query useful data from multiple sensors. The user decides how the data will be combined by configuring different chorals from within the web application. <br><br> Chorals are configured purely on the web app so that sensors are as lightweight as possible in terms of power and the need to fiddle with them is minimal (just register the device and go!).</p>
+                    <p class="left-paragraph"> Choral allows the user to combine and query useful data from multiple sensors. The user decides how the data will be combined by configuring different chorals from within the web application. <br><br> A choral is configured purely on the web app so that sensors are as lightweight as possible in terms of power and the need to fiddle with them is minimal (just register the device and go!).</p>
                 </div>
                 <div class="col-xs-6 text-center">
                     <h4 class="text-center">Choral Weather System</h4>
@@ -231,7 +231,7 @@
                                     <h4 class="subheading">Sensors</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">First, the sensors will gather raw data.</p>
+                                    <p class="text-muted">First, the sensors will gather raw data. This data could represent temperature, weight, or even flow from your favourite beer bottle, which data to gather is up to you!</p>
                                 </div>
                             </div>
                         </li>
@@ -241,10 +241,10 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4 class="subheading">ChoralAllegro: A device </h4>
+                                    <h4 class="subheading">ChoralAllegro</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Incoming sensor data gets sent to the next stage via HTTP requests </p>
+                                    <p class="text-muted">The incoming sensor data gets verified and streamed onto Apache Storm servers. The verification involves checks to see if the data belongs to the correct user.</p>
                                 </div>
                             </div>
                         </li>
@@ -254,10 +254,10 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4 class="subheading">Storm Transformation</h4>
+                                    <h4 class="subheading">ChoralStorm</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">At this stage, the streamed data gets tranformed according to the chorals' configuration. You can configure chorals to add or calculate averages of different devices or even other chorals! </p>
                                 </div>
                             </div>
                         </li>
@@ -267,19 +267,29 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>July 2014</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
+                                    <h4 class="subheading">Data Storage</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">After ChoralStorm transforms data, it gets stored alongside past choral data. The most recent data is also stored on a special Redis database optimized for real-time capabilities. </p>
                                 </div>
                             </div>
                         </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                            </div>
+                           <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">Web Portal</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Data from your chorals get displayed onto the web application where you can navigate between different configured chorals composed of different sensors!</p>
+                                </div>
+                            </div>
+                        </li>
+
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
                             </div>
                         </li>
                     </ul>
@@ -294,7 +304,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">This is our diverse team composed of Software and Electrical engineering students.</h3>
                 </div>
             </div>
             <div class="row">
@@ -404,6 +414,11 @@
                       </ul>
                 </div>
              </div>
+             <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h3 class="section-subheading text-muted"> We would like to thank our supervisor Alex Thomo and the University of Victoria for providing us with the resources and knowledge to complete this project.</h3> 
+                </div>
+            </div>
         </div>
     </section>
 
